@@ -1,0 +1,7 @@
+<h2>Dice rolls</h2>
+<ul>
+  {{#each model as |diceroll|}}
+    <li>{{diceroll.count}}d{{diceroll.type}}</li>
+  {{/each}}
+</ul>
+{{outlet}}

@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('tables');
+  this.route('dicerolls');
 });
 
 export default Router;
