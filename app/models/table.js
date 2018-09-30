@@ -3,17 +3,19 @@ import DS from 'ember-data';
 export default DS.Model.extend({
     title: DS.attr(),
     diceroll: DS.belongsTo('diceroll', {async: false}),
-    tableItems: DS.hasMany('table-item', {async: false}),
+    tableItems: DS.hasMany('table-item', {async: false, inverse: null}),
     roll() {
         var result = this.diceroll.roll();
-        console.log(`table result is ${result}`);
+        console.log(`table result for ${this.title} is ${result}`);
         var matched_item = this.tableItems.filter( function(item, index, enumerable) {
-            console.log(`attempting match for ${this} against ${item.from}-${item.to}`);
             if (item.match(this)) {
                 console.log(`match for ${this}`);
             }
             return item.match(this);
         }, result).firstObject;
-        console.log(`matched item child is ${matched_item.child().firstObject.title}`);
+        
+        if (!matched_item)
+            debugger;
+        console.log(`matched item text is ${matched_item.render()}`);
     }
 });

@@ -1,5 +1,5 @@
 export default [
-    // Heavy Jungle
+    // Heavy Jungle Beasts
     {id: "PDF", title: "Poison Dart Frog"},
     {id: "OD", title: "Obsidian Digger"},
     {id: "BC", title: "Blindfire Carpet"},
@@ -13,4 +13,21 @@ export default [
     {id: "BV", title: "Blindfire Vine"},
     {id: "BW", title: "Bone Wydarr"},
     {id: "SD", title: "Spine Dragon"},
+
+    {id: "Vy3", title: "Vyderac Matron"},
+    {id: "Vy4", title: "Vyderac Matron, 2 Feeders, 12 Swarmers, 6 Seekers"},
+    {id: "Vy5", title: "Vyderac Feeder, 2 Seekers"},
+    {id: "Vy6", title: "Vyderac Feeder, 12 Swarmers"},
+    {id: "Vy7", title: "Vyderac Feeder, 5 Swarmers"},
+    {id: "Vy8", title: "9 Vyderac Swarmers, 1 Seeker"},
+    {id: "Vy9", title: "2 Vyderac Seekers"},
+    {id: "Vy10", title: "Vyderac Seeker"},
+    {id: "Vy12", title: "Vyderac Seeker, 5 Swarmers"},
+    {id: "Vy13", title: "Vyderac Seeker, 11 Swarmers"},
+    {id: "Vy14", title: "2 Vyderac Seekers, 7 Swarmers"},
+    {id: "Vy15", title: "2 Vyderac Seekers, 9 Swarmers"},
+    {id: "Vy16", title: "Vyderac Seeker, 12 Swarmers, 1 Feeder"},
+    {id: "Vy17", title: "6 Vyderac Seekers, 24 Swarmers, 3 Feeders"},
+    {id: "Vy18", title: "Vyderac Matron, 5 feeders, 34 Swarmers, 9 Seekers"},
+
 ];
