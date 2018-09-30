@@ -7,7 +7,6 @@ export default DS.Model.extend({
     roll() {
         var result = this.diceroll.roll();
         console.log(`table result is ${result}`);
-        //debugger;
         var matched_item = this.tableItems.filter( function(item, index, enumerable) {
             console.log(`attempting match for ${this} against ${item.from}-${item.to}`);
             if (item.match(this)) {
@@ -15,6 +14,6 @@ export default DS.Model.extend({
             }
             return item.match(this);
         }, result).firstObject;
-
+        console.log(`matched item encounter is ${matched_item.encounters.firstObject.title}`);
     }
 });
