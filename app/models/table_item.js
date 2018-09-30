@@ -1,0 +1,10 @@
+import DS from 'ember-data';
+
+export default DS.Model.extend({
+    from: DS.attr('number'),
+    to: DS.attr('number'),
+    tables: DS.hasMany('table', {async: false}),
+    match(value_to_compare) {
+        return value_to_compare >= this.from && value_to_compare <= this.to;
+    },
+});
