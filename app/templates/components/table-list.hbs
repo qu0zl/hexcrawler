@@ -1,6 +1,4 @@
 <h2>{{title}}</h2>
-<ul>
-  {{#each tables as |table|}}
-    <li {{action "showTable" table}}>{{table.dicerolls.length}}</li>
-  {{/each}}
-</ul>
+{{#each tables as |tableN|}}
+{{table-comp table=tableN}}
+{{/each}}
