@@ -14,6 +14,6 @@ export default DS.Model.extend({
             }
             return item.match(this);
         }, result).firstObject;
-        console.log(`matched item encounter is ${matched_item.encounters.firstObject.title}`);
+        console.log(`matched item child is ${matched_item.child().firstObject.title}`);
     }
 });
