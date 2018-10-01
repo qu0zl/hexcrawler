@@ -14,8 +14,6 @@ export default DS.Model.extend({
             return item.match(this);
         }, result).firstObject;
         
-        if (!matched_item)
-            debugger;
-        console.log(`matched item text is ${matched_item.render()}`);
+        return matched_item.render();
     }
 });
