@@ -1,8 +1,8 @@
 export default [
     {id: "PW", title: "Purple Worm"},
     {id: "GS", title: "Giant Slug"},
-    {id: "GFB", title: "Giant Fire Beetles", desc: "!d[1d6+10] giant fire beetles"},
-    {id: "sGFB", title: "Giant Fire Beetles", desc: "!d[1d4+1] giant fire beetles"},
+    {id: "GFB", title: "Giant Fire Beetles", desc: "!d[1d6+10] giant fire beetles", npcIds:["GFB"]},
+    {id: "sGFB", title: "Giant Fire Beetles", desc: "!d[1d4+1] giant fire beetles", npcIds:["GFB"]},
     {id: "Trolls", title: "Trolls", desc: "!d[1d4] troll(s)"},
     {id: "Demon", title: "Demon", desc: "A category !d[1d3] demon"},
     {id: "CL", title: "Cavern Lizards", desc: "!d[1d4] cavern lizard(s}"},
@@ -21,7 +21,7 @@ export default [
     {id: "LT", title: "Leng-troop", desc: "!d[1d4] denizen(s) of Leng"},
     {id: "Duergar", title: "Duergar Squad", desc: "!d[1d6+6] duergar plus 3 sergeants and 1 leader",},
 
-    {id: "LengCaravan", title: "Leng Caravan", desc: "1 Leng Denizen Merchant, !d[1d2] Denizen guard(s), !d[1d4] Leng-Bats, !d[1d6] night-ghoul guards, !d[1d6+6] slaves, !d[1d6] cavern lizards."},
+    {id: "LengCaravan", title: "Leng Caravan", desc: "1 Leng Denizen Merchant, !d[1d2] Denizen guard(s), !d[1d4] Leng-Bats, !d[1d6] night-ghoul guards, !d[1d6+6] slaves, !d[1d6] cavern lizards.", npcIds:["DL"]},
     {id: "DrowCaravan", title: "Drow Caravan", desc: "1 Drow Merchant, !d[1d6+6] Drow guards, !d[1d6] bugbears, !d[1d6+6] slaves, !d[1d6] cavern lizards."},
     {id: "DuergarCaravan", title: "Duergar Caravan", desc: "1 Duergar merchant, 10 duergar guards, !d[1d4+4] ogre guards, !d[1d6+6] pack-slaves"},
     {id: "SerpentCaravan", title: "Serpentfolk Caravan", desc: "1 Serpentfolk merchant, !d[1d4] serpentfolk guard(s), !d[1d10+6] troglodyte guards, !d[1d6+6] slaves, !d[1d6] cavern lizards."},

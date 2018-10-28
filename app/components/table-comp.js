@@ -4,7 +4,7 @@ export default Component.extend({
   actions: {
     rollTable(table) {
         var rendered_text = table.roll();
-        $('.output').text(rendered_text);
+        $('.output').html(rendered_text);
     }
   }
 });
