@@ -6,3 +6,10 @@
     margin: 10px;
     width: 200px;
 }
+
+.table_container {
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: row-reverse wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-flow: wrap;
+}
