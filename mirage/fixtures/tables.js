@@ -1,4 +1,7 @@
 export default [
+    {id: "PP", title: 'Primary Passage', dicerollId: "1d40", tableItemIds: ["PP0","PP1","PP2","PP3","PP4","PP5","PP6","PP7","PP8","PP9","PP10","PP11","PP12","PP13","PP14","PP15","PP16","PP17","PP18","PP19","PP20","PP21"] },
+    {id: "Caravan", title: 'Caravan', dicerollId: "1d100", tableItemIds: ["Car1","Car2","Car3","Car4","Car5"] },
+    /*
     {id: "HJE", title: 'Heavy Jungle Elemental', dicerollId: "3d6" },
     {id: "HJE2", title: 'Heavy Jungle Elemental', dicerollId: "3d6" },
     {id: "HJI", title: 'Heavy Jungle Intelligent', dicerollId: "3d6" },
@@ -7,6 +10,7 @@ export default [
     {id: "HJB", title: 'Heavy Jungle Beast', dicerollId: "3d6", tableItemIds: ["HJB3","HJB4","HJB5","HJB6","HJB7","HJB8","HJB9","HJB10","HJB11","HJB12","HJB13","HJB14","HJB15","HJB16","HJB17","HJB18"] },
     //{id: "HJ", title: 'Heavy Jungle', dicerollId: "3d6", tableItemIds: ["HJE","HJI","HJB","HJI2","HJE2"] },
     {id: "HJ", title: 'Heavy Jungle', dicerollId: "3d6", tableItemIds: ["GREG"] },
+    */
     /*
     {id: 2, title: 'Table 2', dicerollId: 2, tableItemIds: [1,2,3,4,5] },
     {id: 3, title: 'Table 3', dicerollId: 2, tableItemIds: [1,2,3,4,5] },
