@@ -1,9 +1,9 @@
 .table_button {
     font-size:large;
-    border-radius: 25px;
+    border-radius: 1em;
     border: 2px solid;
-    padding: 15px;
-    margin: 10px;
+    padding: 1em;
+    margin: 1em;
     width: 200px;
 }
 
@@ -12,4 +12,9 @@
     -webkit-flex-flow: row-reverse wrap; /* Safari 6.1+ */
     display: flex;
     flex-flow: wrap;
+}
+
+.legal {
+    font-size: x-small;
+    margin-top: 1em;
 }
