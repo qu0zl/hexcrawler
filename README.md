@@ -46,7 +46,16 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+For Apache 2 enable mod_rewrite and place this .htaccess file in the same directory
+```
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) index.html [L]
+</IfModule>
+```
 
 ## Further Reading / Useful Links
 
