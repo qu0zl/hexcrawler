@@ -13,7 +13,7 @@ export default [
     {id: "Wights", title: "Wights", desc: "!d[1d6] wight(s)", npcIds:["Wight"]},
     {id: "Xorn", title: "Xorn", desc: "!d[1d2] xorn", npcIds:["Xorn"]},
     {id: "Khryll", title: "Khryll", npcIds:["Khryll"]},
-    {id: "NT", title: "Neh-thalggu", desc: "10 HD neh-thalggu", npcIds:["Neh-thalggu"]},
+    {id: "NT", title: "Neh-thalggu", npcIds:["Neh-thalggu"]},
     {id: "Shrooms", title: "Shrooms", desc: "!d[1d2] shroom(s) with !d[1d3] shambling mound servant(s)", npcIds:["Shroom","ShamblingMounds"]},
     {id: "FB", title: "Fungus-bats", desc: "!d[4d6] fungus-bats", npcIds:["FungusBat"]},
     {id: "LS", title: "Leng-Spider", desc: "1 leng-spider", npcIds:["LengSpider"]},

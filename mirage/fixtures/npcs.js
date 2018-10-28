@@ -21,7 +21,7 @@ export default [
     {id: "Khryll", name: "Khyrll", HD: 8, AC: 16, attack: "8 tentacles (grab with 2 hits)", move: 9, save: 8, AL: 'C', CL: 13, XP: 2300, special: "liquefy internal organs of grabbed victim, mental blast, magic resistance (80%). (<b>Monstrosities</b> 275)", equipment: "a piece of jewellery (1d10x1000gp)"},
     {id: "LengSpider", name: "Leng Spider"},
     {id: "CavernLizard", name: "Cavern Lizard", HD: 4, AC: 14, attack: "bite (2d4)", move: "9 (climb 6)", save: 13, AL: 'N', CL: 4, XP: 120, special: "bite latches for automatic damage each round. (<b>The Tome of Horrors Complete</b> 363)"},
-    {id: "Neh-thalggu", name: "Neh-thalggu", HD: 10, AC: 19, attack: "2 claws (1d8), bite (1d10 plus poison)", move: 9, save: 5, AL: 'C', CL: 12, XP: 2000, special: "lethal poison bite, telepathy 100ft, spells (4/3/2/1).<br>", spells:"1st-charm person, magic missile (x2), sleep; 2nd-invisibility, mirror image, phantasmal force; 3rd-fireball (x2); 4th-dimension door;", equipment: "any 1d2 magic items, 1d3 jewelry (1d3x1000gp), 1d4 gems (1d4x100gp), 3d6gp."},
+    {id: "Neh-thalggu", name: "Neh-thalggu", HD: 10, AC: 19, attack: "2 claws (1d8), bite (1d10 plus poison)", move: 9, save: 5, AL: 'C', CL: 12, XP: 2000, special: "lethal poison bite, telepathy 100ft, spells (4/3/2/1).", spells:"1st-charm person, magic missile (x2), sleep; 2nd-invisibility, mirror image, phantasmal force; 3rd-fireball (x2); 4th-dimension door;", equipment: "any 1d2 magic items, 1d3 jewelry (1d3x1000gp), 1d4 gems (1d4x100gp), 3d6gp."},
     {id: "NightGhouls", name: "Night-ghouls"},
     {id: "PurpleWorm", name: "Purple Worm"},
     {id: "ShamblingMounds", name: "Shambling Mounds"},

@@ -5,7 +5,7 @@ export default DS.Model.extend({
     desc: DS.attr(),
     npcs: DS.hasMany('npc', {async: false}),
     render() {
-        var text = `${this.title}\n${this.desc ? this.desc : ""}`;
+        var text = `<span class='encounter_title'><b>${this.title}</b>${this.desc ? ": " + this.desc : ""}</span>`;
 
         text += this.npcs.invoke("render");
         return text;

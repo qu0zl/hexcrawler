@@ -32,6 +32,6 @@ export default DS.Model.extend({
         return this.special ? `<b>Special:</b> ${this.special} ` : "";
     },
     render() {
-        return `<br><b>${this.name}</b>: <b>HD </b>${this.HD}; <b>AC </b> ${this.renderAC()}; <b>Atk </b> ${this.attack}; <b>Move </b>${this.move}; <b>Save </b>${this.save}; <b>AL </b>${this.AL}; <b>CL/XP </b>${this.CL}/${this.XP}; ${this.renderSpecial()}${this.renderSpells()}${this.renderEquipment()}`
+        return `<br><br><b>${this.name}</b>: <b>HD </b>${this.HD}; <b>AC </b> ${this.renderAC()}; <b>Atk </b> ${this.attack}; <b>Move </b>${this.move}; <b>Save </b>${this.save}; <b>AL </b>${this.AL}; <b>CL/XP </b>${this.CL}/${this.XP}; ${this.renderSpecial()}${this.renderSpells()}${this.renderEquipment()}`
     },
 });
