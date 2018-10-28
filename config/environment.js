@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'hexcrawler',
     environment,
-    rootURL: '/',
+    rootURL: '/hexcrawler',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
