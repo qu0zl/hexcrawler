@@ -20,10 +20,9 @@ export default [
     {id: "Syanngg", title: "Syanngg", desc: "1 syanngg", npcIds:["Syanngg"]},
     {id: "LT", title: "Leng-troop", desc: "!d[1d4] denizen(s) of Leng", npcIds:["DenizenOfLeng"]},
     {id: "Duergar", title: "Duergar Squad", desc: "!d[1d6+6] duergar plus 3 sergeants and 1 leader", npcIds:["DuergarLeader","DuergarSergeant","Duergar"]},
-
-    {id: "LengCaravan", title: "Leng Caravan", desc: "1 Leng Denizen Merchant, !d[1d2] Denizen guard(s), !d[1d4] Leng-Bats, !d[1d6] night-ghoul guards, !d[1d6+6] slaves, !d[1d6] cavern lizards.", npcIds:["DenizenOfLeng"]},
-    {id: "DrowCaravan", title: "Drow Caravan", desc: "1 Drow Merchant, !d[1d6+6] Drow guards, !d[1d6] bugbears, !d[1d6+6] slaves, !d[1d6] cavern lizards."},
+    {id: "LengCaravan", title: "Leng Caravan", desc: "1 Leng Denizen Merchant, !d[1d2] Denizen guard(s), !d[1d4] Leng-Bats, !d[1d6] night-ghoul guards, !d[1d6+6] slaves, !d[1d6] cavern lizards.", npcIds:["LengMerchant","DenizenOfLeng","LengBats","NightGhouls","CavernLizard"]},
+    {id: "DrowCaravan", title: "Drow Caravan", desc: "1 Drow Merchant, !d[1d6+6] Drow guards, !d[1d6] bugbears, !d[1d6+6] slaves, !d[1d6] cavern lizards.", npcIds:["DrowMerchant","DrowGuard","BugbearGuard","CavernLizard"]},
     {id: "DuergarCaravan", title: "Duergar Caravan", desc: "1 Duergar merchant, 10 duergar guards, !d[1d4+4] ogre guards, !d[1d6+6] pack-slaves"},
-    {id: "SerpentCaravan", title: "Serpentfolk Caravan", desc: "1 Serpentfolk merchant, !d[1d4] serpentfolk guard(s), !d[1d10+6] troglodyte guards, !d[1d6+6] slaves, !d[1d6] cavern lizards."},
-    {id: "DarkStalkerCaravan", title: "Dark Stalker Caravan", desc: "3 dark stalkers, 1 dark stalker shaman, !d[4d6] dark creepers, !d[2d6+1] bugbear guards"},
+    {id: "SerpentCaravan", title: "Serpentfolk Caravan", desc: "1 Serpentfolk merchant, !d[1d4] serpentfolk guard(s), !d[1d10+6] troglodyte guards, !d[1d6+6] slaves, !d[1d6] cavern lizards.", npcIds:['SerpentfolkMerchant','SerpentfolkGuard','Troglodyte','CavernLizard']},
+    {id: "DarkStalkerCaravan", title: "Dark Stalker Caravan", desc: "3 dark stalkers, 1 dark stalker shaman, !d[4d6] dark creepers, !d[2d6+1] bugbear guards", npcIds:["DarkStalker","DarkStalkerShaman","DarkCreeper","BugbearGuard"]},
 ];
