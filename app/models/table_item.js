@@ -36,13 +36,6 @@ function replace_markers(text) {
             text = text.replace(matches[i], count);
         }
     }
-    matches = text.match(/!t\[.*?]/g);
-    if (matches) {
-        for (var i=0; i<matches.length; i++) {
-            var table_name = matches[i].split('[')[1].split(']')[0];
-            text = text.replace(matches[i], table_roll(t[table_name]));
-        }
-    }
     return text;
 }
 

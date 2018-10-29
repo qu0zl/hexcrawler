@@ -6,11 +6,7 @@ export default DS.Model.extend({
     tableItems: DS.hasMany('table-item', {async: false, inverse: null}),
     roll() {
         var result = this.diceroll.roll();
-        console.log(`table result for ${this.title} is ${result}`);
         var matched_item = this.tableItems.filter( function(item, index, enumerable) {
-            if (item.match(this)) {
-                console.log(`match for ${this}`);
-            }
             return item.match(this);
         }, result).firstObject;
         
