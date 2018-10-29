@@ -1,0 +1,7 @@
+{{#each model as |collection|}}
+<div class='collection'>
+    {{table-list title=collection.title tables=collection.tables}}
+</div>
+{{/each}}
+<div class="output"></div>
+{{outlet}}

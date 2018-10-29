@@ -40,6 +40,10 @@ export default function() {
         return schema.tables.all();
     });
 
+    this.get('/collections', (schema, request) => {
+        return schema.collections.all();
+    });
+
 /*
     this.get('/tables', function() {
         return {

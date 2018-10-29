@@ -7,6 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('collections');
   this.route('tables');
   this.route('dicerolls');
 });
