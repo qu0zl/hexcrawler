@@ -54,6 +54,18 @@ export default [
     {id: "SP20", from: 37, to: 38, encounterIds:["DenizenOfLeng+"]},
     {id: "SP21", from: 39, to: 40, tableIds:["Caravan"]},
 
+    {id: "CT1", from:1, to: 3, encounterIds:["CT1"]},
+    {id: "CT2", from:4, to: 5, encounterIds:["CT2"]},
+    {id: "CT3", from:6, to: 7, encounterIds:["CT3"]},
+    {id: "CT4", from:8, to: 9, encounterIds:["CT4"]},
+    {id: "CT5", from:10, to: 11, encounterIds:["CT5"]},
+    {id: "CT6", from:12, to: 13, encounterIds:["CT6"]},
+    {id: "CT7", from:14, to: 15, encounterIds:["CT7"]},
+    {id: "CT8", from:16, to: 17, encounterIds:["CT8"]},
+    {id: "CT9", from:18, to: 18, encounterIds:["CT9"]},
+    {id: "CT10", from:19, to: 19, encounterIds:["CT10"]},
+    {id: "CT11", from:20, to: 20, tableIds:["CaravanTreasure"]},
+
 /*
     {id: "PP1", from: 1, to: 1, tableIds:["HJE"]},
     {id: "PP2", from: 2, to: 2, tableIds:["HJI"]},
