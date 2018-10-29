@@ -8,6 +8,9 @@ function rollHP(HP) {
     var nDice = HP;
     var modifier = 0;
     if (typeof(HP) == "string") {
+        if (HP.includes('d')) // HD is in 7d10 format, for example
+            return `!d[${HP}]`; // put in format for dice replacement
+
         var segments = HP.split('+');
         nDice = parseInt(segments[0]);
         modifier = parseInt(segments[1]);
