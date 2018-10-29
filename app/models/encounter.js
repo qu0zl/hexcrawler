@@ -7,7 +7,7 @@ export default DS.Model.extend({
     render() {
         var text = `<span class='encounter_title'><b>${this.title}</b>${this.desc ? ": " + this.desc : ""}</span>`;
 
-        text += this.npcs.invoke("render");
-        return text;
+        var stats = this.npcs.invoke("render");
+        return { "text": text, "stats": stats };
     },
 });
