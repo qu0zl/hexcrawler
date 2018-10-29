@@ -44,6 +44,11 @@ export default function() {
         return schema.collections.all();
     });
 
+    this.get('/tables/:id');
+    this.get('/table-items/:id');
+    this.get('/dicerolls/:id');
+    this.get('/encounters/:id');
+
 /*
     this.get('/tables', function() {
         return {
