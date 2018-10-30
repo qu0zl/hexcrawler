@@ -36,6 +36,18 @@ export default function() {
         return schema.dicerolls.all();
     });
 
+    this.get('/encounters', (schema, request) => {
+        return schema.encounters.all();
+    });
+
+    this.get('/npcs', (schema, request) => {
+        return schema.npcs.all();
+    });
+
+    this.get('/table-items', (schema, request) => {
+        return schema.tableItems.all();
+    });
+
     this.get('/tables', (schema, request) => {
         return schema.tables.all();
     });

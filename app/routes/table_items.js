@@ -2,6 +2,14 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
     model() {
-        return this.store.findAll('tableItem', {include:'encounters, tables, tables.diceroll, tables.tableItems, tables.tableItems.encounters'});
-    }
+        return this.store.findAll('tableItem');
+    },
+    afterModel() {
+        return Ember.RSVP.hash({
+            tables: this.store.findAll('table'),
+            encounters: this.store.findAll('encounter'),
+            npcs: this.store.findAll('npc'),
+            dicerolls: this.store.findAll('diceroll')
+        });
+    },
 });
