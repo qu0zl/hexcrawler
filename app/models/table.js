@@ -48,13 +48,14 @@ export default DS.Model.extend({
         var return_data = {};
         var subtable_data = [];
         var result = this.diceroll.roll();
-        var matched_item = this.tableItems.filter( function(item, index, enumerable) {
+        var values = this.tableItems;
+        var matched_item = values.filter( function(item, index, enumerable) {
             return item.match(this);
         }, result).firstObject;
     
         return_data = matched_item.render();
-
         subtable_data = this.subTables.invoke("roll");
+
         for (var i = 0; i < subtable_data.length; i++) {
             return_data["text"] = `${return_data["text"]}<br>${subtable_data[i]["text"]}`;
             return_data["stats"] = return_data["stats"] + subtable_data[i]["stats"]; 
@@ -68,5 +69,5 @@ export default DS.Model.extend({
         }
 
         return return_data;
-    }
+    },
 });

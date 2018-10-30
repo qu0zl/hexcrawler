@@ -3,7 +3,6 @@ import DS from 'ember-data';
 export default DS.Model.extend({
     count: DS.attr('number'),
     type: DS.attr('number'),
-    tables: DS.hasMany('table', { async: false, inverse: 'diceroll' }),
     roll() {
         var result = 0;
         for (var i=0; i<this.count; i++) {
