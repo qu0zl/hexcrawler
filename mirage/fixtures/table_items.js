@@ -66,6 +66,15 @@ export default [
     {id: "CT10", from:19, to: 19, encounterIds:["CT10"]},
     {id: "CT11", from:20, to: 20, tableIds:["CaravanTreasure"]},
 
+    {id: 'CSlave1', from:1, to:2, encounterIds:["SlaveTroglodyte"]},
+    {id: 'CSlave2', from:3, to:4, encounterIds:["SlaveHuman"]},
+    {id: 'CSlave3', from:5, to:6, encounterIds:["SlaveBugbear"]},
+    {id: 'CSlave4', from:7, to:8, encounterIds:["SlaveDuergar"]},
+    {id: 'CSlave5', from:9, to:10, encounterIds:["SlaveOrc"]},
+    {id: 'CSlave6', from:11, to:11, encounterIds:["SlaveDwarf"]},
+    {id: 'CSlave7', from:12, to:12, encounterIds:["SlaveElf"]},
+
+
 /*
     {id: "PP1", from: 1, to: 1, tableIds:["HJE"]},
     {id: "PP2", from: 2, to: 2, tableIds:["HJI"]},

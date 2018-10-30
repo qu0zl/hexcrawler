@@ -46,4 +46,11 @@ export default [
     {id: 'CT8', title:"Cargo", desc: '1 magic item of any kind (determine randomly from tables in rulebook)'},
     {id: 'CT9', title:"Cargo", desc: '2 magic items of any kind (determine randomly from tables in rulebook)'},
     {id: 'CT10', title:"Cargo", desc: '3 magic items of any kind (determine randomly from tables in rulebook)'},
+    {id: 'SlaveTroglodyte', title:'Troglodyte Slave', npcIds:['Troglodyte']},
+    {id: 'SlaveHuman', title:'Human Slave', npcIds:['HumanSlave']},
+    {id: 'SlaveBugbear', title:'Bugbear Slave', npcIds:['Bugbear']},
+    {id: 'SlaveDuergar', title:'Duergar Slave', npcIds:['DuergarSlave']},
+    {id: 'SlaveOrc', title:'Orc Slave', npcIds:['Orc']},
+    {id: 'SlaveDwarf', title:'Dwarf Slave', npcIds:['Dwarf']},
+    {id: 'SlaveElf', title:'Elf Slave', npcIds:['Elf']},
 ];
