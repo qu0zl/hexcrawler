@@ -38,6 +38,7 @@ export default DS.Model.extend({
     special: DS.attr(),
     thief: DS.attr(),
     spells: DS.attr(),
+    link: DS.attr(),
     renderAC() {
         if (typeof(this.AC) == "string")
             return this.AC
@@ -55,10 +56,13 @@ export default DS.Model.extend({
     renderSpecial() {
         return this.special ? `<b>Special:</b> ${this.special} ` : "";
     },
+    renderLink() {
+        return this.link ? `<a href="${this.link}"><b>More Detail</b></a> ` : "";
+    },
     renderThief() {
         return this.thief ? `<br>&nbsp<b>Thieving Skills:</b> ${this.thief} ` : "";
     },
     render() {
-        return `<br><br><b>${this.name}</b>: <b>HD </b>${this.HD};${this.renderHP()} <b>AC </b> ${this.renderAC()}; <b>Atk </b> ${this.attack}; <b>Move </b>${this.move}; <b>Save </b>${this.save}; <b>AL </b>${this.AL}; <b>CL/XP </b>${this.CL}/${this.XP}; ${this.renderSpecial()}${this.renderSpells()}${this.renderThief()}${this.renderEquipment()}`
+        return `<br><br><b>${this.name}</b>: <b>HD </b>${this.HD};${this.renderHP()} <b>AC </b> ${this.renderAC()}; <b>Atk </b> ${this.attack}; <b>Move </b>${this.move}; <b>Save </b>${this.save}; <b>AL </b>${this.AL}; <b>CL/XP </b>${this.CL}/${this.XP}; ${this.renderSpecial()}${this.renderSpells()}${this.renderThief()}${this.renderEquipment()}${this.renderLink()}`
     },
 });
