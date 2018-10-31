@@ -13,7 +13,6 @@ export default [
     {id: "PP10", from: 16, to: 16, encounterIds:["GO"]},
     {id: "PP11", from: 17, to: 18, encounterIds:["Wights"]},
     {id: "PP12", from: 19, to: 20, encounterIds:["Xorn"]},
-
     {id: "PP13", from: 21, to: 22, encounterIds:["Khryll"]},
     {id: "PP14", from: 23, to: 24, encounterIds:["NT"]},
     {id: "PP15", from: 25, to: 26, encounterIds:["Shrooms"]},
@@ -54,6 +53,28 @@ export default [
     {id: "SP20", from: 37, to: 38, encounterIds:["DenizenOfLeng+"]},
     {id: "SP21", from: 39, to: 40, tableIds:["Caravan"]},
 
+    {id: "TP0", from: 1, to: 2, encounterIds:["GFB"]},
+    {id: "TP1", from: 3, to: 4, encounterIds:["GS"]},
+    {id: "TP2", from: 5, to: 6, encounterIds:["FB++"]},
+    {id: "TP3", from: 7, to: 8, encounterIds:["Shriekers"]},
+    {id: "TP4", from: 9, to: 10, encounterIds:["Troglodytes++"]},
+    {id: "TP5", from: 11, to: 12, encounterIds:["Nebunorne"]},
+    {id: "TP6", from: 13, to: 14, encounterIds:["Syanngg"]},
+    {id: "TP7", from: 15, to: 16, encounterIds:["D3Khryll"]},
+    {id: "TP8", from: 17, to: 17, encounterIds:["BP"]},
+    {id: "TP9", from: 18, to: 18, encounterIds:["GO"]},
+    {id: "TP10", from: 19, to: 20, encounterIds:["Demon3-5"]},
+    {id: "TP11", from: 21, to: 22, encounterIds:["2d6GiantSpiders"]},
+    {id: "TP12", from: 23, to: 24, encounterIds:["PurpleWorm"]},
+    {id: "TP13", from: 25, to: 26, encounterIds:["LengSpider"]},
+    {id: "TP14", from: 27, to: 28, encounterIds:["CavernLizardsD8"]},
+    {id: "TP15", from: 29, to: 30, encounterIds:["BlackDragon"]},
+    {id: "TP16", from: 31, to: 32, encounterIds:["Trolls+"]},
+    {id: "TP17", from: 33, to: 34, encounterIds:["NT"]},
+    {id: "TP18", from: 35, to: 36, encounterIds:["DarkStalkers"]},
+    {id: "TP19", from: 37, to: 38, encounterIds:["WraithGroup"]},
+    {id: "TP20", from: 35, to: 36, encounterIds:["TwoHeadedTroll"]},
+
     {id: "CT1", from:1, to: 3, encounterIds:["CT1"]},
     {id: "CT2", from:4, to: 5, encounterIds:["CT2"]},
     {id: "CT3", from:6, to: 7, encounterIds:["CT3"]},
@@ -73,10 +94,4 @@ export default [
     {id: 'CSlave5', from:9, to:10, encounterIds:["SlaveOrc"]},
     {id: 'CSlave6', from:11, to:11, encounterIds:["SlaveDwarf"]},
     {id: 'CSlave7', from:12, to:12, encounterIds:["SlaveElf"]},
-
-
-/*
-    {id: "PP1", from: 1, to: 1, tableIds:["HJE"]},
-    {id: "PP2", from: 2, to: 2, tableIds:["HJI"]},
-    */
 ];

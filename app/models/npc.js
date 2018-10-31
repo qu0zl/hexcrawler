@@ -45,7 +45,7 @@ export default DS.Model.extend({
         return `${19-this.AC}[${this.AC}]`;
     },
     renderEquipment() {
-        return this.equipment ? `<br>&nbsp<b>Equipment: </b>${this.equipment}` : "";
+        return this.equipment ? `<br>&nbsp<b>Equipment: </b>${this.equipment} ` : "";
     },
     renderHP() {
         return ` <b>HP </b> ${this.HP ? this.HP : rollHP(this.HD)}; `;
