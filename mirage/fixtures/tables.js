@@ -5,4 +5,7 @@ export default [
     {id: "Caravan", title: 'Caravan', dicerollId: "1d100", tableItemIds: ["Car1","Car2","Car3","Car4","Car5"], subTableIds: ["CaravanTreasure"] },
     {id: 'CaravanTreasure', title: 'Caravan Treasure', dicerollId: "1d20", tableItemIds:["CT1","CT2","CT3","CT4","CT5","CT6","CT7","CT8","CT9","CT10","CT11"] },
     {id: 'CaravanSlaves', title:'Caravan Slaves', dicerollId: '1d12', tableItemIds:['CSlave1','CSlave2','CSlave3','CSlave4','CSlave5','CSlave6','CSlave7'] },
+    {id: 'RooftopTraps', title:'Rooftop Traps', dicerollId:'1d20', tableItemIds:['RT1','RT2','RT3','RT4','RT5']},
+    {id: 'ScythingBlade', title:'Scything blade trap', dicerollId: '1d20', tableItemIds:['SB1','SB2','SB3','SB4']},
+    {id: 'NoxiousGases', title:'Noxious gases', dicerollId: '1d10', tableItemIds:['NG1','NG2','NG3']},
 ];

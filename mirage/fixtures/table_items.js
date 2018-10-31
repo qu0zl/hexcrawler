@@ -94,4 +94,18 @@ export default [
     {id: 'CSlave5', from:9, to:10, encounterIds:["SlaveOrc"]},
     {id: 'CSlave6', from:11, to:11, encounterIds:["SlaveDwarf"]},
     {id: 'CSlave7', from:12, to:12, encounterIds:["SlaveElf"]},
+
+    {id: 'RT1', from:1, to: 5, text: '<b>Large, spring-mounted net</b>, with attached alarm bell. Roll a saving throw; failure means that the net springs, the character is entangled, and the bell rings. Someone will be up from the building shortly to see what\'s for lunch.'},
+    {id: 'RT2', from:6, to: 10, tableIds:['ScythingBlade']},
+    {id: 'RT3', from:11, to:15, text:'<b>Razor blades and wire.</b> Traversing this roof will inflict 1d3 points of damage per 10ft traveled. Various measures could be used to negate or bypass this hazard.'},
+    {id:'RT4', from:16, to:19, text:'<b>Snares.</b> Unless the character is moving very fast (or in darkness) these snares can be bypassed automatically. If the character is moving incautiously or blindly, a thin wire snare automatically catches and holds the character. It takes !d[1d3+5] minutes to cut through the wire\'s tight hold; ripping loose in 1 minute causes !d[1d6] points of damage and causes the character to leave a blood trail for the next 30 minutes.'},
+    {id:'RT5', from: 20, to:20, tableIds:['NoxiousGases']},
+
+    {id: 'SB1', from:1, to: 10, text: '<b>Scything blade</b> (roll to hit as a 5HD monster). Inflicts !d[1d6] damage'},
+    {id: 'SB2', from:11, to: 15, text: '<b>Scything blade</b> (roll to hit as a 5HD monster). Inflicts !d[2d6] damage'},
+    {id: 'SB3', from:16, to: 19, text: '<b>Scything blade</b> (roll to hit as a 5HD monster). Inflicts !d[3d6] damage'},
+    {id: 'SB4', from:20, to: 20, text: '<b>Scything blade</b> (roll to hit as a 5HD monster). Inflicts !d[4d6] damage, and severs the character\'s foot if 1 roll is rolled on a d20 (roll result !d[1d20])'},
+    {id:'NG1', from:1, to:5, text:'<b>Noxious gases.</b> Poison gas is drifting from one of the city\'s manufactories, and air currents have caused it to concentrate around this block of buildings. It is of weak concentration (1d6 [!d[1d6]] points of damage, saving throw at +1 negates)'},
+    {id:'NG2', from:6, to:8, text:'<b>Noxious gases.</b> Poison gas is drifting from one of the city\'s manufactories, and air currents have caused it to concentrate around this block of buildings. It is of medium concentration (1d6 [!d[1d6]] points of damage, saving throw reduces by half.)'},
+    {id:'NG3', from:9, to:10, text:'<b>Noxious gases.</b> Poison gas is drifting from one of the city\'s manufactories, and air currents have caused it to concentrate around this block of buildings. It is of severe concentration (3d6 [!d[3d6]] points of damage, saving throw reduces by half.)'},
 ];
