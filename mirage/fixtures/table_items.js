@@ -123,4 +123,9 @@ export default [
     {id:'RTE1',from:1, to:15, text:'No danger encountered'},
     {id:'RTE2',from:16, to:18, tableIds:['RooftopTraps']},
     {id:'RTE3',from:19, to:20, tableIds:['RooftopAnimals']},
+
+    {id:'IMS1', from:1, to:2, text:'Slave Coffle (<b>!d[2d10] slaves</b> of various weak races such as <b>bugbears, orcs, goblins, zombies, troglodytes</b> or <b>humans</b> guarded by <b>!d[1d2] members of a stronger race (darkfolk, drow, duergar, night-ghouls,</b> or <b>serpentfolk)</b>'},
+
+    {id:'Avarthamna', from:1, to:60, text:'Avarthamna'},
+    {id:'Kshamarat', from:61, to:100, text:'Kshamarat'},
 ];

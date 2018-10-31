@@ -4,6 +4,12 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function table_roll(store, tableID) {
+    var table = store.peekRecord('table', tableID);
+    var table_data = table.roll();
+    return table_data["text"]+table_data["stats"];
+}
+
 function roll(amount, type) {
     var count = 0;
     for (var i=0; i<amount; i++) {
@@ -12,7 +18,7 @@ function roll(amount, type) {
     return count;
 }
 
-function replace_markers(text) {
+function replace_markers(store, text) {
     var matches = text.match(/!d\[.*?]/gi);
     if (matches) {
         for (var i=0; i<matches.length; i++) {
@@ -34,6 +40,13 @@ function replace_markers(text) {
             count += plus;
             count -= minus;
             text = text.replace(matches[i], count);
+        }
+    }
+    matches = text.match(/!t\[.*?]/g);
+    if (matches) {
+        for (var i=0; i<matches.length; i++) {
+            var tableID = matches[i].split('[')[1].split(']')[0];
+            text = text.replace(matches[i], table_roll(store, tableID));
         }
     }
     return text;
@@ -62,10 +75,10 @@ export default DS.Model.extend({
         }
 
         if (return_data["text"]) {
-            return_data["text"] = replace_markers(return_data["text"]);
+            return_data["text"] = replace_markers(this.store, return_data["text"]);
         }
         if (return_data["stats"].length) {
-            return_data["stats"] = replace_markers(return_data["stats"]+"");
+            return_data["stats"] = replace_markers(this.store, return_data["stats"]+"");
         }
 
         return return_data;
