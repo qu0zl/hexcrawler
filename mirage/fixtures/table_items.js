@@ -108,4 +108,19 @@ export default [
     {id:'NG1', from:1, to:5, text:'<b>Noxious gases.</b> Poison gas is drifting from one of the city\'s manufactories, and air currents have caused it to concentrate around this block of buildings. It is of weak concentration (1d6 [!d[1d6]] points of damage, saving throw at +1 negates)'},
     {id:'NG2', from:6, to:8, text:'<b>Noxious gases.</b> Poison gas is drifting from one of the city\'s manufactories, and air currents have caused it to concentrate around this block of buildings. It is of medium concentration (1d6 [!d[1d6]] points of damage, saving throw reduces by half.)'},
     {id:'NG3', from:9, to:10, text:'<b>Noxious gases.</b> Poison gas is drifting from one of the city\'s manufactories, and air currents have caused it to concentrate around this block of buildings. It is of severe concentration (3d6 [!d[3d6]] points of damage, saving throw reduces by half.)'},
+
+    {id:'RTA1',from:1, to:1, enounterIds:['GloomCrawler']},
+    {id:'RTA2',from:2, to:2, encounterIds:['GoblinDogs']},
+    {id:'RTA3',from:3, to:3, encounterIds:['Stirges']},
+    {id:'RTA4',from:4, to:4, encounterIds:['AlarmGoblin']},
+    {id:'RTA5',from:5, to:5, encounterIds:['PoisonousSnakes']},
+    {id:'RTA6',from:6, to:6, encounterIds:['CaveCrickets']},
+    {id:'RTA7',from:7, to:7, encounterIds:['GiantLeeches']},
+    {id:'RTA8',from:8, to:8, encounterIds:['CarrionCreepers']},
+    {id:'RTA9',from:9, to:9, encounterIds:['1d4Shriekers']},
+    {id:'RTA10',from:10, to:10, encounterIds:['GiantRats']},
+
+    {id:'RTE1',from:1, to:15, text:'No danger encountered'},
+    {id:'RTE2',from:16, to:18, tableIds:['RooftopTraps']},
+    {id:'RTE3',from:19, to:20, tableIds:['RooftopAnimals']},
 ];

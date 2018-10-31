@@ -8,4 +8,6 @@ export default [
     {id: 'RooftopTraps', title:'Rooftop Traps', dicerollId:'1d20', tableItemIds:['RT1','RT2','RT3','RT4','RT5']},
     {id: 'ScythingBlade', title:'Scything blade trap', dicerollId: '1d20', tableItemIds:['SB1','SB2','SB3','SB4']},
     {id: 'NoxiousGases', title:'Noxious gases', dicerollId: '1d10', tableItemIds:['NG1','NG2','NG3']},
+    {id:'RooftopAnimals', title:'Rooftop Animals', dicerollId:'1d10', tableItemIds:['RTA1','RTA2','RTA3','RTA4','RTA5','RTA6','RTA7','RTA8','RTA9','RTA10']},
+    {id:'RooftopEncounters', title:'Rooftop Encounters', dicerollId:'1d20', tableItemIds:['RTE1','RTE2','RTE3']},
 ];
