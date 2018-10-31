@@ -3,6 +3,10 @@
     font-style: oblique;
 }
 
+.output {
+    margin-top:0.5em;
+}
+
 .table_title {
     padding 0.5em;
     margin-bottom:0;
