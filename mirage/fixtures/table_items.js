@@ -125,6 +125,19 @@ export default [
     {id:'RTE3',from:19, to:20, tableIds:['RooftopAnimals']},
 
     {id:'IMS1', from:1, to:2, text:'Slave Coffle (<b>!d[2d10] slaves</b> of various weak races such as <b>bugbears, orcs, goblins, zombies, troglodytes</b> or <b>humans</b> guarded by <b>!d[1d2] members of a stronger race (darkfolk, drow, duergar, night-ghouls,</b> or <b>serpentfolk)</b>'},
+    {id:'IMS2', from:3, to:9, encounterIds:['DarkStalkers-']},
+    {id:'IMS3', from: 10, to:10, encounterIds:['NightGhouls']},
+    {id:'IMS4', from:11, to:13, encounterIds:['Serpentfolk']},
+    {id:'IMS5', from:14, to:14, text:'<b>Performer</b> (azamarthi player, mad poet, violinist, etc.)'},
+    {id:'IMS6', from:15, to:15, tableIds:['AttackFromAbove']},
+    {id:'IMS7', from:16, to:16, encounterIds:["1d2DenizenOfLeng"]},
+    {id:'IMS8', from:17, to:17, encounterIds:['NobleDarkStalker']},
+    {id:'IMS9', from:18, to:18, encounterIds:['DuergarWithLeader']},
+    {id:'IMS10', from:19, to:20, text:'<b>Street Vendor</b><br>!t[IzamneStores]'},
+
+    {id:'AFA1', from:1, to:80, encounterIds:['Stirge']},
+    {id:'AFA2', from:81, to:95, encounterIds:['Stirges']},
+    {id:'AFA3', from:96, to:100, encounterIds:['4d6Stirges']},
 
     {id:'Avarthamna', from:1, to:60, text:'Avarthamna'},
     {id:'Kshamarat', from:61, to:100, text:'Kshamarat'},
