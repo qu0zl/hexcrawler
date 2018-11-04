@@ -11,4 +11,5 @@ export default [
     {id:'RooftopAnimals', title:'Rooftop Animals', dicerollId:'1d10', tableItemIds:['RTA1','RTA2','RTA3','RTA4','RTA5','RTA6','RTA7','RTA8','RTA9','RTA10']},
     {id:'RooftopEncounters', title:'Rooftop Encounters', dicerollId:'1d20', tableItemIds:['RTE1','RTE2','RTE3']},
     {id:'DarkfolkCulture', title:'Darkfolk Culture', dicerollId:'1d100', tableItemIds:['Avarthamna','Kshamarat']},
+    {id:'IzamneStores', title:'Stores', dicerollId:'1d100', tableItemIds:['IzS1','IzS2','IzS3','IzS4','IzS5','IzS6','IzS7','IzS8','IzS9','IzS10','IzS11','IzS12','IzS13','IzS14','IzS15','IzS16']},
 ];

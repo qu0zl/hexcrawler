@@ -128,4 +128,22 @@ export default [
 
     {id:'Avarthamna', from:1, to:60, text:'Avarthamna'},
     {id:'Kshamarat', from:61, to:100, text:'Kshamarat'},
+
+    // Izamne stores
+    {id:'IzS1', from:1, to:5, text:'Mushroom seller<br>&nbspDried, normal (rations) 1gp/day<br>&nbspDried, gourmet (rations) 2gp/day<br>&nbspSauteed on a stick, 1 plateful 1gp'},
+    {id:'IzS2', from:6, to:10, text:'Restaurant (rat kabob and goblin steak quality, 1gp meals)'},
+    {id:'IzS3', from:11, to:15, text:'Restaurant (cave sushi and wine quality, 10gp meals)'},
+    {id:'IzS4', from:16, to:25, text:'Wine dealer<br>&nbspGreen Fungus Wine (1gp/wineskin)<br>&nbspRed Fungus Wine (2gp/wineskin)<br>&nbspGreywine (10gp/bottle)<br>&nbspFrostwine (100gp/bottle)'},
+    {id:'IzS5', from:26, to:30, text:'Restaurant (only nobles and celebrities allowed 20gp+ meals)'},
+    {id:'IzS6', from:31, to:50, text:'Weapons (as per rulebook prices)'},
+    {id:'IzS7', from:51, to:60, text:'Gems, Dealer has !d[1d10+5] gems. One of them is worth !d[1d10],000. 2 are worth !d[1d6]00 each, and the rest are worth !d[1d10] each. The gem dealers marks up his sales by 10% (he sells a 50 gp gem for 55 gp, for example) and will purchase gems from the characters at 90% of actual value (he will buy the 50gp gem for 45 gp).'},
+    {id:'IzS8', from:61, to:65, text:'Pets<br>&nbspFurry cave thing that hums (25gp; red ones cost 30gp)<br>&nbspSinging bat (10gp; vampire ones are 20gp)<br>&nbspFishbowl of cave fish (5gp)<br>&nbspHarmless snake (1gp)<br>&nbspCave Python (200gp)'},
+    {id:'IzS9', from:66, to:70, text:'Work Animals<br>&nbspRiding Lizards 250gp<br>&nbspGoblin Dog 100gp<br>&nbspCave Cricket 100gp'},
+    {id:'IzS10', from:71, to:75, text:'Knockknacks, oddments, and curiosities (various prices)'},
+    {id:'IzS11', from:76, to:80, text:'Wagon(s) for sale 300gp (also wagon repair, tools, etc)'},
+    {id:'IzS12', from:81, to:85, text:'<i>Potion of healing</i> 250gp (potion dealers are scarce and will only be found 1d2 times in any given day)'},
+    {id:'IzS13', from:86, to:92, text:'Clothing, normal (for darkfolk, including face veils) 5gp'},
+    {id:'IzS14', from:93, to:94, text:'Boots and shoes (1gp up to 100gp)'},
+    {id:'IzS15', from:95, to:98, text:'Apothecary (including drugs, blood, and poisons)'},
+    {id:'IzS16', from:99, to:100, text:'Map (re-roll this result if you do not want the players to have a map).'},
 ];
