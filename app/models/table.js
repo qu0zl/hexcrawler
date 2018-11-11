@@ -54,6 +54,7 @@ function replace_markers(store, text) {
 
 export default DS.Model.extend({
     title: DS.attr(),
+    text: DS.attr(),
     diceroll: DS.belongsTo('diceroll', {async: false}),
     tableItems: DS.hasMany('table-item', {async: false, inverse: null}),
     subTables: DS.hasMany('table', {async: false, inverse: null}),
@@ -65,8 +66,12 @@ export default DS.Model.extend({
         var matched_item = values.filter( function(item, index, enumerable) {
             return item.match(this);
         }, result).firstObject;
-    
+
         return_data = matched_item.render();
+
+        if (this.text)
+            return_data["text"] = `<span class='table_text'>${this.text}</span><br>` + return_data["text"];
+
         subtable_data = this.subTables.invoke("roll");
 
         for (var i = 0; i < subtable_data.length; i++) {

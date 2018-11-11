@@ -7,5 +7,6 @@ export default [
     {id: "1d20", count: 1, type: 20},
     {id: "1d40", count: 1, type: 40},
     {id: "1d100", count: 1, type: 100},
+    {id: "1d1000", count: 1, type: 1000},
     //{id: 2, count: 3, type: 6, tableIds: [2, 3]},
 ];

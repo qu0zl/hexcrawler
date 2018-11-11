@@ -12,6 +12,10 @@ export default [
     {id:'RooftopEncounters', title:'Rooftop Encounters', dicerollId:'1d20', tableItemIds:['RTE1','RTE2','RTE3']},
     {id:'DarkfolkCulture', title:'Darkfolk Culture', dicerollId:'1d100', tableItemIds:['Avarthamna','Kshamarat']},
     {id:'AttackFromAbove', title:'Attack from Above!', dicerollId:'1d100', tableItemIds:['AFA1','AFA2','AFA3']},
+    {id:'AttackFromAbove+', title:'Attack from Above!', dicerollId:'1d100', tableItemIds:['AFA+1','AFA+2']},
     {id:'IzamneMainStreets',title:'Main Street', dicerollId:'1d20', tableItemIds:['IMS1','IMS2','IMS3','IMS4','IMS5','IMS6','IMS7','IMS8','IMS9','IMS10']},
+    {id:'IzamneSecondaryStreets',title:'Secondary Street', dicerollId:'1d1000', tableItemIds:['ISS1','ISS2','ISS3','ISS4','ISS5','ISS6','ISS7','ISS8','ISS9','ISS10','ISS11','ISS12','ISS13','ISS14','ISS15','ISS16','ISS17','ISS18','ISS19','ISS20']},
     {id:'IzamneStores', title:'Stores', dicerollId:'1d100', tableItemIds:['IzS1','IzS2','IzS3','IzS4','IzS5','IzS6','IzS7','IzS8','IzS9','IzS10','IzS11','IzS12','IzS13','IzS14','IzS15','IzS16']},
+    {id:'Corpse', title:'Izamne Corpse', text:'A recent corpse or wounded creature', dicerollId:'1d100', tableItemIds:['Corpse1','Corpse2','Corpse3','Corpse4','Corpse5','Corpse6','Corpse7']},
 ];
+
