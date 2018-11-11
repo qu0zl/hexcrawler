@@ -63,6 +63,6 @@ export default DS.Model.extend({
         return this.thief ? `<br>&nbsp<b>Thieving Skills:</b> ${this.thief} ` : "";
     },
     render() {
-        return `<br><b>${this.name ? this.name : this.id}</b>: <b>HD </b>${this.HD};${this.renderHP()} <b>AC </b> ${this.renderAC()}; <b>Atk </b> ${this.attack}; <b>Move </b>${this.move}; <b>Save </b>${this.save}; <b>AL </b>${this.AL}; <b>CL/XP </b>${this.CL}/${this.XP}; ${this.renderSpecial()}${this.renderSpells()}${this.renderThief()}${this.renderEquipment()}${this.renderLink()}<br>`
+        return `<b>${this.name ? this.name : this.id}</b>: <b>HD </b>${this.HD};${this.renderHP()} <b>AC </b> ${this.renderAC()}; <b>Atk </b> ${this.attack}; <b>Move </b>${this.move}; <b>Save </b>${this.save}; <b>AL </b>${this.AL}; <b>CL/XP </b>${this.CL}/${this.XP}; ${this.renderSpecial()}${this.renderSpells()}${this.renderThief()}${this.renderEquipment()}${this.renderLink()}<br><br>`
     },
 });

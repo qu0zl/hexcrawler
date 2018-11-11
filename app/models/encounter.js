@@ -6,7 +6,7 @@ export default DS.Model.extend({
     npcs: DS.hasMany('npc', {async: false}),
     render() {
         var stats="";
-        var text = `<span class='encounter_title'><b>${this.title}</b>${this.desc ? ": " + this.desc : ""}</span>`;
+        var text = `<span class='encounter_title'><b>${this.title}</b>${this.desc ? ": " + this.desc : ""}</span><br>`;
 
         var stats_array = this.npcs.invoke("render");
         for (var i=0; i<stats_array.length; i++) {

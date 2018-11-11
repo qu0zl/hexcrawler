@@ -5,7 +5,7 @@ export default Component.extend({
     rollTable(table) {
         var result = table.roll();
         $('.output').html(result["text"]);
-        $('.npcs').html(result["stats"]);
+        $('.npcs').html(result["stats"] ? result["stats"] : "");
     }
   }
 });

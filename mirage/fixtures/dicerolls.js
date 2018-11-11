@@ -1,5 +1,6 @@
 export default [
     {id: "1d6", count: 1, type: 6},
+    {id: "1d8", count: 1, type: 8},
     {id: "2d6", count: 2, type: 6},
     {id: "3d6", count: 3, type: 6},
     {id: "1d10", count: 1, type: 10},

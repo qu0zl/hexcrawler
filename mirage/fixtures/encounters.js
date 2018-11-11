@@ -100,4 +100,15 @@ export default [
     {id: 'Grue', title: '1 grue', desc: '(type 2)', npcIds:['Grue']},
     {id:'1d2Shadows', title: '!d[1d2] Shadow(s)', npcIds:['Shadow']},
     {id:'1d2Hellhounds', title:'!d[1d2] Hellhound(s)', npcIds:['Hellhound4HD','Hellhound5HD','Hellhound6HD','Hellhound7HD']},
-];
+    {id:'SCI_1', title:'Dark Stalkers', desc:'<b>!d[1d3] dark stalker(s)</b> of the Kshamarat civilization with <b>!d[1d3] dark creeper servants</b> each.!ts[RumourTable1]', npcIds:['DarkStalker','DarkCreeper']},
+    {id:'SCI_2', title:'Duergar', desc:'!d[1d10] Duergar.!ts[RumourTable2|1_in_2]', npcIds:["Duergar","DuergarLeader","DuergarSergeant"]},
+    {id:'SCI_3', title:'Syanngg', desc:'If the syanngg has a mission it wants done, it will be a truly deadly task but it will pay very, very well. The first time this result occurs the Syanngg will be the one name Thumb-Chewer, who lives in the area of <b>Q13</b> on the city grid.!ts[RumourTable2|1_in_10]', npcIds:["Syanngg"]},
+    {id:'SCI_4', title:'Wererats', desc:'!d[1d6] wererat(s) (all in hybrid form).!ts[RumourTable2|1_in_10]', npcIds:['Wererat']},
+    {id:'SCI_5', title:'Drow', desc:'!d[1d6] drow.!ts[RumourTable2|1_in_2]', npcIds:['Drow','DrowMerchant']},
+    {id:'SCI_6', title:'Human Mercenaries', desc:'Referee to randomly determine group composition. Humanoids can be generated <a href="http://gregfarrell.org/hire/">here</a>.'},
+    {id:'SCI_7', title:'Mixed human/goblinoid slaver crew', desc:'Referee to randomly determine group composition. Humanoids can be generated <a href="http://gregfarrell.org/hire/">here</a>. Slavers are too poor to offer their own missions. If a mission is generated, it is for someone else, and they will disclose it if they get a 10% cut.!ts[RumourTable1|1_in_4]'},
+    {id:'SCI_8', title:'Humanoid Chief (bugbear)', desc:'A bugbear chief is either a mercenary leader or a slaver leader.!ts[RumourTable1|1_in_20]', npcIds:['Bugbear']},
+    {id:'SCI_9', title:'Dark Stalkers', desc:'<b>!d[1d3] dark stalker(s)</b> of the Avarthamna civilization with <b>!d[1d3] dark creeper servants</b> each.!ts[RumourTable1]', npcIds:['DarkStalker','DarkCreeper']},
+    {id:'SCI_10', title:'Shroom', desc:'1 Shroom.!ts[RumourTable2]', npcIds:['Shroom']},
+    {id:'SCI_11', title:'Hezrou', desc:'Category II Demon. This creatue is in the service of someone else.', npcIds:['Hezrou']},
+]

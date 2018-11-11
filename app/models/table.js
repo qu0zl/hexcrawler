@@ -1,13 +1,29 @@
 import DS from 'ember-data';
 
+function merge_data_arrays(a, b) {
+    if (b["text"]) {
+        if(a["text"])
+            a["text"] = a["text"]+b["text"]
+        else
+            a["text"] = b["text"]
+    }
+    if (b["stats"]) {
+        if(a["stats"])
+            a["stats"] = a["stats"]+b["stats"]
+        else
+            a["stats"] = b["stats"]
+    }
+    return a;
+}
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function table_roll(store, tableID) {
     var table = store.peekRecord('table', tableID);
-    var table_data = table.roll();
-    return table_data["text"]+table_data["stats"];
+    var table_data = table.roll(false);
+    return `${table_data["text"] ? table_data["text"] : ""}${table_data["stats"] ? table_data["stats"] : ""}`;
 }
 
 function roll(amount, type) {
@@ -18,7 +34,7 @@ function roll(amount, type) {
     return count;
 }
 
-function replace_markers(store, text) {
+function replace_dice(text) {
     var matches = text.match(/!d\[.*?]/gi);
     if (matches) {
         for (var i=0; i<matches.length; i++) {
@@ -42,11 +58,34 @@ function replace_markers(store, text) {
             text = text.replace(matches[i], count);
         }
     }
-    matches = text.match(/!t\[.*?]/g);
+    return text;
+}
+
+function replace_markers(store, text) {
+    text = replace_dice(text);
+
+    var matches = text.match(/!t\[.*?]/g);
     if (matches) {
         for (var i=0; i<matches.length; i++) {
             var tableID = matches[i].split('[')[1].split(']')[0];
             text = text.replace(matches[i], table_roll(store, tableID));
+        }
+    }
+    matches = text.match(/!ts\[.*?]/g);
+    if (matches) {
+        for (var i=0; i<matches.length; i++) {
+            var contents = matches[i].split('[')[1].split(']')[0];
+            var components = contents.split('|');
+            var tableID = components[0];
+            var should_run = true;
+            if (components.length > 1) {
+               var parts = components[1].split('_in_');
+               should_run = getRandomInt(1,parseInt(parts[1])) <= parseInt(parts[0]);
+            }
+            if (should_run)
+                text = text.replace(matches[i], `<p class='table_small'>${table_roll(store, tableID)}</p>`);
+            else
+                text = text.replace(matches[i], "");
         }
     }
     return text;
@@ -57,10 +96,23 @@ export default DS.Model.extend({
     text: DS.attr(),
     hide: DS.attr('boolean', { defaultValue: false }),
     diceroll: DS.belongsTo('diceroll', {async: false}),
+    timesToRoll: DS.attr( { defaultValue: 1} ),
     tableItems: DS.hasMany('table-item', {async: false, inverse: null}),
     subTables: DS.hasMany('table', {async: false, inverse: null}),
-    roll() {
-        var return_data = { "text":"", "stats":""};
+    roll(use_div=true){
+        var return_data = {}
+        var count = this.timesToRoll;
+        if (typeof(count) == "string") {
+            count = getRandomInt(1, parseInt(replace_dice(this.timesToRoll)));
+        }
+        console.log(`rolling table ${count} times`);
+        for (var i=0; i<count; i++) {
+            merge_data_arrays(return_data, this.roll_inner(use_div));
+        }
+        return return_data;
+    },
+    roll_inner(use_div=true) {
+        var return_data = { "text": use_div ? "<div class=table_inner>" : "", "stats":""};
         var subtable_data = [];
 
         if (this.diceroll) { // some tables can have no dicerolls, just text
@@ -70,11 +122,11 @@ export default DS.Model.extend({
                 return item.match(this);
             }, result).firstObject;
 
-            return_data = matched_item.render();
+            return_data = merge_data_arrays(return_data, matched_item.render());
         }
 
         if (this.text)
-            return_data["text"] = `<span class='table_text'>${this.text}</span><br>` + return_data["text"];
+            return_data["text"] = `<span class='table_text'>${this.text}</span>` + return_data["text"];
 
         subtable_data = this.subTables.invoke("roll");
 
@@ -85,6 +137,8 @@ export default DS.Model.extend({
 
         if (return_data["text"]) {
             return_data["text"] = replace_markers(this.store, return_data["text"]);
+            if (use_div)
+                return_data["text"] = return_data["text"] + "</div>";
         }
         if (return_data["stats"].length) {
             return_data["stats"] = replace_markers(this.store, return_data["stats"]+"");

@@ -26,5 +26,8 @@ export default [
     {id:'NightGhoulName', title:'Night-Ghoul Name', text:"!t[NGa]!t[NGb]!t[NGc]"},
     {id:'DarkStalkerName', title:'Dark Stalker Name', text:"!t[DFa]!t[DFb] !t[DFc]"},
     {id:'DarkCreeperName', title:'Dark Creeper Name', text:"!t[DFa]!t[DFb]"},
+    {id:'RumourTable1', title:'Rumour/Mission Table 1', dicerollId:'1d8', tableItemIds:['RumourTable1_1','RumourTable1_2','RumourTable1_3','RumourTable1_4','RumourTable1_5','RumourTable1_6','RumourTable1_7','RumourTable1_8']},
+    {id:'RumourTable2', title:'Rumour/Mission Table 2', dicerollId:'1d6', tableItemIds:['RumourTable2_1','RumourTable2_2','RumourTable2_3','RumourTable2_4','RumourTable2_5','RumourTable2_6']},
+    {id:'ShadyCharacterInn', title:'Shady Character Inn', timesToRoll:'!d[1d6]', dicerollId:'1d100', tableItemIds:['SCI_1','SCI_2','SCI_3','SCI_4','SCI_5','SCI_6','SCI_7','SCI_8','SCI_9','SCI_10','SCI_11']},
 ];
 

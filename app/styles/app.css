@@ -3,6 +3,15 @@
     font-style: oblique;
 }
 
+.table_inner {
+    margin-bottom:0.4em;
+}
+
+.table_small {
+    font-size:smaller;
+    margin:0.1em;
+}
+
 .output {
     margin-top:0.5em;
 }
