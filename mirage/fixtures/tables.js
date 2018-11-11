@@ -17,5 +17,14 @@ export default [
     {id:'IzamneSecondaryStreets',title:'Secondary Street', dicerollId:'1d1000', tableItemIds:['ISS1','ISS2','ISS3','ISS4','ISS5','ISS6','ISS7','ISS8','ISS9','ISS10','ISS11','ISS12','ISS13','ISS14','ISS15','ISS16','ISS17','ISS18','ISS19','ISS20']},
     {id:'IzamneStores', title:'Stores', dicerollId:'1d100', tableItemIds:['IzS1','IzS2','IzS3','IzS4','IzS5','IzS6','IzS7','IzS8','IzS9','IzS10','IzS11','IzS12','IzS13','IzS14','IzS15','IzS16']},
     {id:'Corpse', title:'Izamne Corpse', text:'A recent corpse or wounded creature', dicerollId:'1d100', tableItemIds:['Corpse1','Corpse2','Corpse3','Corpse4','Corpse5','Corpse6','Corpse7']},
+    {id:'NGa', hide:true, title:'Night Ghoul First Syllable', dicerollId:'1d10', tableItemIds:['NGa1','NGa2','NGa3','NGa4','NGa5','NGa6','NGa7','NGa8','NGa9','NGa10']},
+    {id:'NGb', hide:true, title:'Night Ghoul Second Syllable', dicerollId:'1d10', tableItemIds:['NGb1','NGb2','NGb3','NGb4','NGb5','NGb6','NGb7','NGb8','NGb9','NGb10']},
+    {id:'NGc', hide:true, title:'Night Ghoul Third Syllable', dicerollId:'1d10', tableItemIds:['NGc1','NGc2','NGc3','NGc4','NGc5','NGc6','NGc7','NGc8','NGc9','NGc10']},
+    {id:'DFa', hide:true, title:'Night Ghoul First Syllable', dicerollId:'1d10', tableItemIds:['DFa1','DFa2','DFa3','DFa4','DFa5','DFa6','DFa7','DFa8','DFa9','DFa10']},
+    {id:'DFb', hide:true, title:'Night Ghoul Second Syllable', dicerollId:'1d10', tableItemIds:['DFb1','DFb2','DFb3','DFb4','DFb5','DFb6','DFb7','DFb8','DFb9','DFb10']},
+    {id:'DFc', hide:true, title:'Night Ghoul Third Syllable', dicerollId:'1d10', tableItemIds:['DFc1','DFc2','DFc3','DFc4','DFc5','DFc6','DFc7','DFc8','DFc9','DFc10']},
+    {id:'NightGhoulName', title:'Night-Ghoul Name', text:"!t[NGa]!t[NGb]!t[NGc]"},
+    {id:'DarkStalkerName', title:'Dark Stalker Name', text:"!t[DFa]!t[DFb] !t[DFc]"},
+    {id:'DarkCreeperName', title:'Dark Creeper Name', text:"!t[DFa]!t[DFb]"},
 ];
 

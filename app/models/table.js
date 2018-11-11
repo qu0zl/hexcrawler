@@ -55,19 +55,23 @@ function replace_markers(store, text) {
 export default DS.Model.extend({
     title: DS.attr(),
     text: DS.attr(),
+    hide: DS.attr('boolean', { defaultValue: false }),
     diceroll: DS.belongsTo('diceroll', {async: false}),
     tableItems: DS.hasMany('table-item', {async: false, inverse: null}),
     subTables: DS.hasMany('table', {async: false, inverse: null}),
     roll() {
-        var return_data = {};
+        var return_data = { "text":"", "stats":""};
         var subtable_data = [];
-        var result = this.diceroll.roll();
-        var values = this.tableItems;
-        var matched_item = values.filter( function(item, index, enumerable) {
-            return item.match(this);
-        }, result).firstObject;
 
-        return_data = matched_item.render();
+        if (this.diceroll) { // some tables can have no dicerolls, just text
+            var result = this.diceroll.roll();
+            var values = this.tableItems;
+            var matched_item = values.filter( function(item, index, enumerable) {
+                return item.match(this);
+            }, result).firstObject;
+
+            return_data = matched_item.render();
+        }
 
         if (this.text)
             return_data["text"] = `<span class='table_text'>${this.text}</span><br>` + return_data["text"];

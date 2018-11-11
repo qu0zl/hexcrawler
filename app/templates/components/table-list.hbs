@@ -1,6 +1,8 @@
 <h2 class='table_title'>{{title}}</h2>
 <div class="table_container">
   {{#each tables as |tableN|}}
-    {{table-comp table=tableN}}
+    {{#unless tableN.hide }}
+      {{table-comp table=tableN}}
+    {{/unless}}
   {{/each}}
 </div>
