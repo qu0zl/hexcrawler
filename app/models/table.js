@@ -105,7 +105,6 @@ export default DS.Model.extend({
         if (typeof(count) == "string") {
             count = getRandomInt(1, parseInt(replace_dice(this.timesToRoll)));
         }
-        console.log(`rolling table ${count} times`);
         for (var i=0; i<count; i++) {
             merge_data_arrays(return_data, this.roll_inner(use_div));
         }
