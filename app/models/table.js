@@ -138,7 +138,8 @@ export default DS.Model.extend({
 
         for (var i = 0; i < subtable_data.length; i++) {
             return_data["text"] = `${return_data["text"]} ${subtable_data[i]["text"]}`;
-            return_data["stats"] = return_data["stats"] + subtable_data[i]["stats"]; 
+            if (subtable_data[i]["stats"])
+                return_data["stats"] = return_data["stats"] + subtable_data[i]["stats"]; 
         }
 
         if (return_data["text"]) {
