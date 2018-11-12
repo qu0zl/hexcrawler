@@ -1,9 +1,13 @@
 import DS from 'ember-data';
 
-function merge_data_arrays(a, b) {
+function merge_data_arrays(a, b, use_comma=false) {
     if (b["text"]) {
-        if(a["text"])
-            a["text"] = a["text"]+b["text"]
+        if(a["text"]) {
+            if (use_comma)
+                a["text"] = a["text"]+", "+b["text"]
+            else
+                a["text"] = a["text"]+b["text"]
+        }
         else
             a["text"] = b["text"]
     }
@@ -95,6 +99,7 @@ export default DS.Model.extend({
     title: DS.attr(),
     text: DS.attr(),
     hide: DS.attr('boolean', { defaultValue: false }),
+    options: DS.attr(),
     diceroll: DS.belongsTo('diceroll', {async: false}),
     timesToRoll: DS.attr( { defaultValue: 1} ),
     tableItems: DS.hasMany('table-item', {async: false, inverse: null}),
@@ -103,15 +108,17 @@ export default DS.Model.extend({
         var return_data = {}
         var count = this.timesToRoll;
         if (typeof(count) == "string") {
-            count = getRandomInt(1, parseInt(replace_dice(this.timesToRoll)));
+            count = parseInt(replace_dice(this.timesToRoll));
         }
         for (var i=0; i<count; i++) {
-            merge_data_arrays(return_data, this.roll_inner(use_div));
+            var use_comma = this.options == 'inline';
+            merge_data_arrays(return_data, this.roll_inner(use_div, this.options), use_comma );
         }
         return return_data;
     },
-    roll_inner(use_div=true) {
-        var return_data = { "text": use_div ? "<div class=table_inner>" : "", "stats":""};
+    roll_inner(use_div=true, options="") {
+        var classes = `table_inner ${options=='inline' ? 'table_inline':''}`;
+        var return_data = { "text": use_div ? `<div class='${classes}'>` : "", "stats":""};
         var subtable_data = [];
 
         if (this.diceroll) { // some tables can have no dicerolls, just text
@@ -130,7 +137,7 @@ export default DS.Model.extend({
         subtable_data = this.subTables.invoke("roll");
 
         for (var i = 0; i < subtable_data.length; i++) {
-            return_data["text"] = `${return_data["text"]}<br>${subtable_data[i]["text"]}`;
+            return_data["text"] = `${return_data["text"]} ${subtable_data[i]["text"]}`;
             return_data["stats"] = return_data["stats"] + subtable_data[i]["stats"]; 
         }
 
